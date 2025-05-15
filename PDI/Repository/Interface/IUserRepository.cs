@@ -1,0 +1,7 @@
+﻿namespace PDI.Repository.Interface
+{
+    public class IUserRepository
+    {
+        Task AddUserAync(user user)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+    }
+}

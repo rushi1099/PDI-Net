@@ -1,7 +1,13 @@
-﻿namespace PDI.Repository.Interface
+﻿using PDI.DTO;
+using System.Collections;
+
+namespace PDI.Repository.Interface
 {
-    public class IUserRepository
+    public interface IUserRepository
     {
-        Task AddUserAync(user user)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+        Task<User> RegisterUser (userSignup signup);
+        Task<User> LoginUser(userSignIn signin);
+        Task<IEnumerable<User>> GetAllUsers();
+        
     }
 }

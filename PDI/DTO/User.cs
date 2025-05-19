@@ -10,19 +10,22 @@ namespace PDI.DTO
         public string Password { get; set; }
 
     }
-    public class userSignup()
+    public class userSignup
     {
         [Required]
-        public string Username { get; set; }
+        public string userName { get; set; }
 
         [Required]
         public string Password { get; set; }
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
 
     }
-    public class userSignIn() 
+    public class userSignIn
     {
         [Required]
-        public string Email { get; set; }
+        public string userName { get; set; }
         [Required]
         public string Password { get; set; }
     }
